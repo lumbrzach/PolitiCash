@@ -23,10 +23,11 @@ class DataContainer extends Component {
           electedOfficials: data.data.officials,
           contributions: data.data.results
         });
-        console.log(this.state.electedOfficials);
-        console.log(this.state.contributions);
       })
-      .then(this.getLibertarian());
+      .then(this.getLibertarian())
+      .catch(err => {
+        console.log(err);
+      });
   }
 
   getDemocrat = () => {

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Segment, Header, List, Divider } from 'semantic-ui-react';
-import OfficialCard from './OfficialCard';
 
 const Republicans = props => {
   if (props.rep === undefined) {
